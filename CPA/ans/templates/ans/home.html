@@ -1,0 +1,17 @@
+{% extends "ans/base.html" %}
+{% block content %}
+<div class="five">
+    <div></div>
+    <div class="nine">
+        <div><button class="button1" onclick="location.href={% url 'cpa-home' %}";>CPA</button></div>
+        <div><button class="button1">CPS</button></div>
+    </div>
+    <div>
+        <a href="{% url 'cpa-home' %}">
+            <div>
+                <h6>Accounting, Auditing and Finance</h6>
+            </div>
+        </a>
+    </div>
+</div>
+{% endblock content %}
