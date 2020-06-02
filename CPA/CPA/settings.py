@@ -25,7 +25,7 @@ SECRET_KEY = 'x$rvn0mfu+ls67e&89x86pqcp8pltlj%f7#!0@ui6_ijg5)2$k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['68.183.94.159']
 
 
 # Application definition
@@ -81,6 +81,17 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+#DATABASES = {
+    #'default': {
+        #'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #'NAME': 'blogdb',
+       # 'USER': 'manager',
+        #'PASSWORD': 'avails7442ffGh3636',
+       # 'HOST': 'localhost',
+      #  'PORT': '',
+    #}
+#}
 
 
 # Password validation
