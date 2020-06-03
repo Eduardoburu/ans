@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x$rvn0mfu+ls67e&89x86pqcp8pltlj%f7#!0@ui6_ijg5)2$k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.accounting-connection.com','accounting-connection.com']
 
