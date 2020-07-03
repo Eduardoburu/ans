@@ -33,6 +33,8 @@ ALLOWED_HOSTS = ['www.accounting-connection.com','accounting-connection.com']
 INSTALLED_APPS = [
     'ans.apps.AnsConfig',
     'financialAccounting.apps.FinancialaccountingConfig',
+    'law.apps.LawConfig',
+    'entrepreneurship.apps.EntrepreneurshipConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
