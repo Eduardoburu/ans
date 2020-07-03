@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Accounting Connection</a>
+        <a class="navbar-brand" href="{% url 'ans-home' %}">Accounting Connection</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,25 +18,35 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'ans-home' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
+                 <!-- Answer button end 
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                 </li>
+                -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="{% url 'cpa-home' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         CPA
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Section One</a>
-                        <a class="dropdown-item" href="#">Section Two</a>
+                        <a class="dropdown-item" href="{% url 'cpa-partone' %}">Part One</a>
+
+                        <!--
+                        <a class="dropdown-item" href="#">Part Two</a>
+                        <a class="dropdown-item" href="#">Part Three</a>
+                        -->
+
+                        <!-- Answer button end
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Section Three</a>
                         <a class="dropdown-item" href="#">Section Four</a>
                         <a class="dropdown-item" href="#">Section Five</a>
                         <a class="dropdown-item" href="#">Section Six</a>
+                         -->
                     </div>
                 </li>
+                <!--
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         CPS
@@ -54,6 +64,7 @@
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">Disabled</a>
                 </li>
+                -->
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -63,10 +74,10 @@
     </nav>
     {% block content %}{% endblock %}
     <!-- Footer -->
-    <footer class="page-footer font-small blue pt-4">
+    <footer class="page-footer font-small blue pt-4 ">
         
         <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
+        <div class="container-fluid text-center text-md-left kf2">
             
             <!-- Grid row -->
             <div class="row">
@@ -76,7 +87,7 @@
                     
                     <!-- Content -->
                     <h5 class="text-uppercase">Accounting Connection</h5>
-                    <p>Here you can use rows and columns to organize your footer content.</p>
+                    <p></p>
                     
                 </div>
                 <!-- Grid column -->
@@ -87,20 +98,20 @@
                 <div class="col-md-3 mb-md-0 mb-3">
                     
                     <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
+                    <h5 class="text-uppercase"></h5>
                     
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
+                            <a href="{% url 'law_paper_list' %}">Business Law</a>
                         </li>
                         <li>
-                            <a href="#!">Link 2</a>
+                            <a href="{% url 'entrepreneurship_paper_list' %}">Entrepreneurship and Communication</a>
                         </li>
                         <li>
-                            <a href="#!">Link 3</a>
+                            <a href="{% url 'fa_questions_list' %}">Financial Accounting</a>
                         </li>
                         <li>
-                            <a href="#!">Link 4</a>
+                            <a href="#!">Economics</a>
                         </li>
                     </ul>
                     
@@ -111,20 +122,20 @@
                 <div class="col-md-3 mb-md-0 mb-3">
                     
                     <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
+                    <h5 class="text-uppercase"></h5>
                     
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
+                            <a href="#!">Company Law</a>
                         </li>
                         <li>
-                            <a href="#!">Link 2</a>
+                            <a href="#!">Financial Reporting</a>
                         </li>
                         <li>
-                            <a href="#!">Link 3</a>
+                            <a href="#!">Financial Management</a>
                         </li>
                         <li>
-                            <a href="#!">Link 4</a>
+                            <a href="#!">Auditing and Assurance</a>
                         </li>
                     </ul>
                     
@@ -139,7 +150,7 @@
         
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+            <a href="https://mdbootstrap.com/"> accounting-connection.com</a>
         </div>
         <!-- Copyright -->
         

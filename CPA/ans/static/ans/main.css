@@ -172,3 +172,7 @@ tr:nth-child(even) {
 .clk1:hover {
   background-color: #ADD8E6;
 }
+
+.kf2 a {
+  color: black;
+}
