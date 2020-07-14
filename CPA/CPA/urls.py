@@ -24,6 +24,11 @@ urlpatterns = [
     path('FA/', include('financialAccounting.urls')),
     path('Law/', include('law.urls')),
     path('Entrepreneurship/', include('entrepreneurship.urls')),
+    path('Economics/', include('economics.urls')),
+    path('Taxation/', include('taxation.urls')),
+    path('Management_Accounting/', include('managementaccounting.urls')),
+    path('Financial_Management/', include('financialmanagement.urls')), 
+    path('Company_Law/', include('companylaw.urls')),
 ]
 
 
