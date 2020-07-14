@@ -8,6 +8,6 @@ urlpatterns = [
     path('', HomeView.as_view(), name='ans-home'),
     path('cpa', CpaView.as_view(), name='cpa-home'),
     path('cpa/partone', PartoneView.as_view(), name='cpa-partone'),
-    path('cpa/parttwo', PartoneView.as_view(), name='cpa-parttwo'),
-    path('cpa/partthree', PartoneView.as_view(), name='cpa-partthree'),
+    path('cpa/parttwo', ParttwoView.as_view(), name='cpa-parttwo'),
+    path('cpa/partthree', PartthreeView.as_view(), name='cpa-partthree'),
 ]
